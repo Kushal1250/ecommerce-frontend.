@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Commerece Frontend</title>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Frontend</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <!-- Header -->
   <header class="site-header">
     <div class="logo">ShopBrand</div>
-
     <nav class="nav-links">
       <a href="#">Home</a>
-      <a href="#">Products</a>
+      <a href="#products">Products</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
-
     <div class="header-right">
       <input type="text" class="search-bar" placeholder="Search products..." />
-
       <div class="cart-icon">
-        <!-- cart.svg -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#333"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-        >
-          <path
-            d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
-           0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
-           2-.9 2-2-.9-2-2-2zM7.16 
-           14h9.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49a1 
-           1 0 0 0-.88-1.48H5.21L4.27 
-           2H1v2h2l3.6 7.59-1.35 
-           2.45c-.16.28-.25.61-.25.96 
-           0 1.1.9 2 2 2h12v-2H7.42c-.14 
-           0-.25-.11-.25-.25l.03-.12L7.16 14z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#333" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
+                   0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 
+                   2-.9 2-2-.9-2-2-2zM7.16 
+                   14h9.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49a1 
+                   1 0 0 0-.88-1.48H5.21L4.27 
+                   2H1v2h2l3.6 7.59-1.35 
+                   2.45c-.16.28-.25.61-.25.96 
+                   0 1.1.9 2 2 2h12v-2H7.42c-.14 
+                   0-.25-.11-.25-.25l.03-.12L7.16 14z" />
         </svg>
-        <span class="badge">0</span>
+        <span class="badge" id="cart-badge">0</span>
       </div>
-
       <div class="hamburger">&#9776;</div>
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
-  <div class="hero-content">
-    <h1>Biggest Sale of the Year!</h1>
-    <p>Up to 70% off on all electronics. Limited time only.</p>
-    <a href="#products" class="btn-cta">Shop Now</a>
-  </div>
-</section>
+    <div class="hero-content">
+      <h1>Biggest Sale of the Year!</h1>
+      <p>Up to 70% off on all electronics. Limited time only.</p>
+      <a href="#products" class="btn-cta">Shop Now</a>
+    </div>
+  </section>
 
+  <!-- Product Grid -->
+  <section class="product-section" id="products">
+    <div class="product-grid" id="product-grid">
+      <!-- Cards will be dynamically inserted here -->
+    </div>
+  </section>
 
-  <body>
-    <script src="scripts/app.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="scripts/app.js"></script>
+</body>
 </html>
