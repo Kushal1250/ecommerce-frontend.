@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #898383;
+}
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -82,5 +87,73 @@
 
   .hamburger {
     display: block;
+  }
+}
+
+.hero {
+  background: url('../assets/hero-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-cta {
+  background-color: #ff6a00;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #e45c00;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
