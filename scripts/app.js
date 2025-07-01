@@ -1,1 +1,1 @@
- console.log("E-Commerce Website Loaded");
+console.log("E-Commerce Website Loaded");
