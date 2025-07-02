@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles/cart.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ShopBrand</div>
+    <nav>
+      <a href="index.html">Continue Shopping</a>
+      <span class="cart-count" id="cart-count">Cart (0)</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-container">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items">
+        <!-- Items injected here -->
+      </div>
+      <div class="cart-summary">
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn" class="btn" disabled>Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/cart.js"></script>
+</body>
+</html>
